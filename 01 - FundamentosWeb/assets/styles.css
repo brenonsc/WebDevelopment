@@ -1,0 +1,146 @@
+/* Estilo global */
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #181818;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para a barra de navegação */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+}
+
+/* Estilo para o cabeçalho */
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilo para o conteúdo do perfil */
+p {
+  margin-inline: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: justify;
+}
+
+/* Estilo para a imagem do perfil */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Estilo para o vídeo */
+iframe {
+  display: block;
+  margin: 40px auto;
+}
+
+/* Estilo para o título do vídeo */
+h2 {
+  text-align: center;
+}
+
+/* Limpar flutuações após a barra de navegação */
+ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Estilo para o formulário */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+input {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  display: block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+div {
+  text-align: center;
+}
+
+div a {
+  display: inline-block;
+  width: 100px;
+  margin: 2px 2px; /* Espaço horizontal entre os ícones */
+}
+
+#nome {
+  width: 100%;
+  cols: 60;
+}
+
+#email {
+  width: 100%;
+  cols: 60;
+}
+
+.container {
+  padding: 30px;
+}
+
+.paragrafo {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
