@@ -1,4 +1,4 @@
-# FundamentosWeb :movie_camera::earth_americas:
+# MovieTime :movie_camera:
 
 Este repositório contém duas páginas web simples que listam filmes dirigidos por Christopher Nolan e Quentin Tarantino. Cada página possui capas de filmes que direcionam os visitantes para as respectivas páginas do IMDb para obter mais informações.
 
