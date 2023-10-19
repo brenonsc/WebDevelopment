@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato</title>
-    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <ul>
@@ -20,18 +20,22 @@
     <form>
       <div>
         <label for="nome">Nome:</label>
-        <input type="nome" id="nome" />
+        <input type="nome" id="nome" onkeyup="validaNome()"/>
+        <div id="txtNome"></div>
       </div>
       <div>
         <label for="email">E-mail:</label>
-        <input type="email" id="email" />
+        <input type="email" id="email" onkeyup="validaEmail()"/>
+        <div id="txtEmail"></div>
       </div>
       <div>
         <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" cols="60" rows="10"></textarea>
+        <textarea id="mensagem" cols="60" rows="10" onkeyup="validaMensagem()"></textarea>
+        <div id="txtMensagem"></div>
       </div>
-      <button type="submit">Enviar</button>
+      <button onclick="enviar()" type="submit">Enviar</button>
     </form>
+
     <div class="container">
       <h2>Me encontre em:</h2>
       <p class="paragrafo">Av. Senador Teotônio Vilela, 261</p>
@@ -40,6 +44,9 @@
         src="https://www.google.com/maps/d/embed?mid=134FQ1IUBNA1wgSMRHtVSPj2WHOk&hl=en_US&ehbc=2E312F"
         width="640"
         height="480"
+        id="mapa"
+        onmousemove="mapaZoom()"
+        onmouseout="mapaNormal()"
       ></iframe>
     </div>
     <div class="inline">
@@ -56,5 +63,6 @@
         <img alt="Breno's Github" src="./assets/img/Github.png" />
       </a>
     </div>
+    <script src="assets/script/script.js"></script>
   </body>
 </html>
